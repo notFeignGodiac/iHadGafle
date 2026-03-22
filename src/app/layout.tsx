@@ -4,6 +4,7 @@ import Nav from '@/components/layout/Nav'
 import Cursor from '@/components/ui/Cursor'
 import { IdleToast, ContextMenu, KonamiEgg } from '@/components/ui/Interactions'
 import TabTaunt from '@/components/ui/TabTaunt'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
   title: 'iHadGafle — You Already Had It',
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <IdleToast />
         <ContextMenu />
         <KonamiEgg />
+        <Analytics />
       </body>
     </html>
   )
